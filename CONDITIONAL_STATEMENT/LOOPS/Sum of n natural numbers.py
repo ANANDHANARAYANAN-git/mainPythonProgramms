@@ -1,0 +1,6 @@
+#find sum of natural numbers ,natural number starts from n
+n=int(input("Enter the number"))
+sum=0
+for i in range(1,n+1,1):# i=1  i=2  i=3 ....
+    sum=sum+i           #sum=1  =3   =6 .....
+print("sum of number is",sum)#correct space for outof the loop
