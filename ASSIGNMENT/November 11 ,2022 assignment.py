@@ -100,13 +100,8 @@
 
 #7)Remove character at even indices of a string
 
-str=input("Enter the string")
-ln=len(str)
-for i in str:
-    if i%2==0:
-
-
-
+s=input("Enter the string")
+print("String :",s[1::2])
 
 #8)Count the number of words in a string
 

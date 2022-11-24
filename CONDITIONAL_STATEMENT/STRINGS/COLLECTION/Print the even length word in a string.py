@@ -6,7 +6,7 @@
 # for i in lst:
 #     if len(i)%2==0:
 #         print(i)
-
+#
 #OR
 
 str=input("Enter the string").split()
