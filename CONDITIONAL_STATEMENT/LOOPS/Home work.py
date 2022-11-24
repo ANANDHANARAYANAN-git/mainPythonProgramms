@@ -55,131 +55,84 @@
 # print("Count of digits",count1)
 # print("Count of alpha",count2)
 
-#1)Check a given number is a perfect number or not.
 
+# lst=[1,2,3,4,5,6,7,8,9]
 # n=int(input("Enter the number"))
-# sum=0
-# for i in range (1,n):
-#     if n%i==0:
-#         sum=sum+i
-# if sum==n:
-#     print("It  is a perfect number")
-# else:
-#     print("It is not a perfect number")
-
-#2) * * * * *
-#    * * * *
-#     * * *
-#      * *
-#       *
-
-# n=int(input("Enter the number"))
-# for i in range(n):
-#     for j in range(i):
-#         print(end=" ")
-#     for j in range(n-i):
-#         print("*",end=" ")
-#     print()
-
-#3) A
-#   B B
-#   C C C
-#   D D D D
-#   E E E E E
-
-# k=65
-# n=int(input("Enter the number"))
-# for i in range(1,n+1):
-#     for j in range(i):
-#         print(chr(k),end=" ")
-#     k=k+1
-#     print()
-
-#4)print only even length word in a given string
-
-#5)Find words which are greater than given length
-
-# l=input("Enter the string").split()
-# n=int(input("Enter the length"))
-# for word in l:
-#     if len(word)==n:
-#         print(word)
-
-#6)Check a string is symmetric
-
-#str=input("Enter the string")
-
-#7)Remove character at even indices of a string
-
-# str=input("Enter the string")
-# str1=""
-# for i in range(len(str)):
-#     if i%2==1:
-#         str1=str1+str[i]
-# print(str1)
-
-#8)Count the number of words in a string
-
-# str=input("Enter the string")
-# c=1
-# for i in str:
-#      if i==" ":
-#          c=c+1
-# print("Number of words in the string",c)
-
-#9)check given year is leap year or not
-
-# n=int(input("Enter the number"))
-# if n%4==0:
-#     print(n,"is a leap year")
-# else:
-#     print(n,"is not a leap year")
-
-#10)multiply all number in a list
-
-# lst=input("Enter the list").split()
-# print(lst)
-# m=1
 # for i in lst:
-#     m=m*int(i)
-# print("multiple is",m)
-
-#11)sort elements in a list without using built in function sort()
-
-# lst=input("Enter the number").split()
-# print(lst)
-# newlst=[]
-# for i in lst:
-#     if i
+#     if i==n:
+#         print("Element found")
 
 
 
+# ement=int(input("enter a element"))
+# while(low<=upp):
+#     mid=(low+upp)//2
+#     if element>lst[mid]:
+#         low=mid+1
+#     elif element<lst[mid]:
+#         upp=mid-1
+#     elif element==lst[mid]:
+#         flag=1
+#         break
+# if(flag>0):
+#     print("element found")
+# else:
+#     print("element not found")
 
-#12)Count numbers in a list which is greater than a given number
-# lst=input("Enter the list").split()
-# n=int(input("Enter the number"))
+
+# str=input("Enter the input").split()
+# n=int(input("Enter the limit"))
 # c=0
-# for i in lst:
-#     if int(i)>n:
+# for i in str:
+#     if len(i)>n:
 #         c=c+1
 # print(c)
 
-#13)Count the number of lowercase and uppercase character in a string
 
-str=input("Enter the string")
-c1=0
-c2=0
-for i in str:
-    if i.isupper():
-        c1=c1+1
-    else:
-        c2=c2+1
-print(c1)
-print(c2)
+#Even tuple and odd tuple creation
+# tup=tuple(input("Enter the tup").split())
+# print(tup)
+# elst=[]
+# olst=[]
+# for i in tup:
+#     if int(i)%2==0:
+#         elst.append(int(i))
+#     else:
+#         olst.append(int(i))
+# print("tuple with even numbers:",tuple(elst))
+# print("tuple with odd number",tuple(olst))
 
 
-#even tuple and odd tuple creation
+#cube of digits=amstrong(3digit)
 
+# n=int(input("Enter the number"))
+# p=len(str(n))
+# print(p)
+# num=n
+# sum=0
+# while n>0:
+#     d=n%10
+#     sum=sum+d**p
+#     n=n//10
+# if sum==num:
+#     print("It is amstrong")
+# else:
+#     print("It is not amstrong")
+
+#print prime numbers with in a range
+ 
+# ll=int(input("Enter the upper limt"))
+# ul=int(input("Enter the lower limit"))
+# for i in range(ll,ul+1):
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         if i!=1:
+#             print(i,end=" ")
+
+s=1,2,3,4,5,6
+print
 
 
 

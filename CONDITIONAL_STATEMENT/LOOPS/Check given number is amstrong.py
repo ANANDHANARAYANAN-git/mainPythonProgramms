@@ -1,4 +1,4 @@
-#amstrong is the sum of cube of digits are eqaal to the number
+#amstrong is the sum of cube of digits are eqaal to the number(sum of power of number of digit=number)
 n=int(input("Enter the number"))
 num=n
 sum=0

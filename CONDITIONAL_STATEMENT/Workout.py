@@ -393,11 +393,199 @@
 # print("Even list is",elst)
 # print("Odd  list is",olst)
 
-lst=[1,3,2,5,4,7,9,6]
-sum=0
-for i in lst:
-    sum=sum+i
-print("sum of given list is",sum)
+# lst=[1,3,2,5,4,7,9,6]
+# sum=0
+# for i in lst:
+#     sum=sum+i
+# print("sum of given list is",sum)
+
+# lst=input("Enter the elements").split()
+# elst=[]
+# olst=[]
+# for i in lst:
+#     if int(i)%2==0:
+#         elst.append(int(i))
+#     else:
+#         olst.append(int(i))
+# print("Even list is",elst)
+# print("Odd  list is",olst)
+
+# farm={'Eemen':1,'Catrine':2,'David':3}
+# farm['Jack']=8
+# print(farm)
+#
+# farm.pop('Catrine')
+# print(farm)
+#
+# c=0
+# for i in farm:
+#     c=c+1
+# print(c)
+
+# dic2={'name':'appu','cls':'BCA','regno':121}
+# print(len(dic2))
+# print(dic2.keys())
+# print(dic2.values())
+# print(dic2.items())
+# print(dic2.get('cls'))#or print(dic2['cls]
+# dic2.update({'college':'xyz','place':2})
+# print(dic2)
+
+
+# lst=['hello','hai','orange','hello','orange','hello']
+# dic={}
+# for i in lst:
+#     if i not in dic:
+#         dic[i]=1
+#     else:
+#         dic[i]=dic[i]+1
+# print(dic)
+
+#angstrom
+
+# n=int(input("Enter the number"))
+# p=len(str(n))
+# sum=0
+# num=0
+# while n>0:
+#     d=n%10
+#     sum=sum+d**p
+#     n=n//10
+# if sum==num:
+#     print("it is angstrome")
+# else:
+#     print("it is not angstrome")
+
+#prime number within a range
+
+# ul=int(input("Enter the upper limit"))
+# ll=int(input("Enter the lower limit"))
+# for i in range(ll,ul,1):
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         print(i,end=" ")
+
+
+# lst=input("Enter the number").split()
+# l=len(lst)
+# sum=0
+# for i in lst:
+#     sum=sum+int(i)
+# avg=sum/l
+# print("Average is",avg)
+
+# def fac(n):
+#     p=1
+#     for i in range(1,n+1):
+#         p=p*i
+#     print("factorial of",n,"is",p)
+# fac(5)
+
+# def prm():
+#     n=int(input("Enter the number"))
+#     for i in range(2,n):
+#         if n%i==0:
+#             print(n,"is not a prime number")
+#             break
+#     else:
+#         print(n,"it is a prime number")
+# prm()
+
+# def prm(n):
+#     c=0
+#     for i in range(1,n+1):
+#         if n%i==0:
+#             c=c+1
+#     if c==2:
+#         print(n,"is a prime number")
+#     else:
+#         print(n,"it is not a prime number")
+# prm(3)
+# prm(15)
+# prm(11 )
+
+# def student_details(a,b,c,d=10):
+#     print("roll no",a)
+#     print("class",b)
+#     print("dep",c)
+#     print("college",d)
+# student_details(1,2,3,6)
+
+# def vrb(*arg):
+#     for i in arg:
+#         print(i,end=" ")
+# vrb(10,11,12,1,3,14)
+
+#lambda functn to find square of a numbr
+
+# sqr=lambda a:a*a
+# print("sqaure is",sqr(4))
+
+#find the avrg of 3 nmbr us lambda
+
+# avg=lambda a,b,c:(a+b+c)/3
+# print(avg(1,2,3))
+
+#find largest amng 2 number us lambda funtn
+
+# lrg=lambda a,b:a if a>b else b
+# print(lrg(10,3))
+
+#fnd lrgamng 3 nmbr us lambda
+
+# lrg=lambda a,b,c:a if a>=b and a>=c else b if b>=a and b>=c else c
+# print(lrg(10,19,30))
+
+#cnvrt strng to uprcas usng lmbda fn
+
+# upr=lambda strg:strg.upper()
+# print(upr("anandhanarayanan s"))
+
+#count number of character of element in a string using map function.
+
+# lst=['apple','orange','mango','jackfruit','pineapple']
+# newlst=list(map(len,lst))
+# print(newlst)
+
+# lst=['one','two','three']
+# newlst=list(map(list,lst))
+# print(newlst)
+
+# def cube(a):
+#     return a**3
+# lst=input("Enter the number").split()
+# newlst=list(map(int,lst))
+# newlst1=list(map(cube,newlst))
+# print(newlst1)
+
+#create a newlst by subtract 5 from each element
+
+# def sub(a):
+#     return a-5
+# lst=input("Enter the number").split()
+# lst1=list(map(int,lst))
+# lst2=list(map(sub,lst1))
+# print("New list is",lst2)
+
+# def u(a):
+#     return a.upper()
+# lst=input("Enter the string").split()
+# lst1=list(map(u,lst))
+# print(lst1)
+
+#or
+
+lst=input("Enter the string").split()
+lst1=list(map(lambda a:a.upper(),lst))
+print(lst1)
+
+
+
+
+
+
 
 
 

@@ -6,8 +6,7 @@
 #         lrg=i
 # print("large value in list is",lrg)
 
-lst=input("Enter the list element").split   #because all element in list in form of string.
-print(lst)
+lst=input("Enter the list element").split()   #because all element in list in form of string
 lrg=0
 for i in lst:
     if int(i)>lrg:                          #so value of i in the list must be specially mentioned as integer(int)
