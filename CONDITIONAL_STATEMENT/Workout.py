@@ -577,21 +577,66 @@
 
 #or
 
-lst=input("Enter the string").split()
-lst1=list(map(lambda a:a.upper(),lst))
-print(lst1)
+# lst=input("Enter the string").split()
+# lst1=list(map(lambda a:a.upper(),lst))
+# print(lst1)
+
+#create a new list contain only odd number using filter function
+# lst=[3,1,5,2,6,7]
+# newlst=list(filter(lambda x:x%2==1,lst))
+# print(newlst)
+
+#or
+
+# lst=[3,1,5,2,6,7]
+# newlst=list(filter(lambda a:a%2!=0,lst))
+# print(newlst)
 
 
+lst=[1,2,3,4,5,6]
 
+# newlst=[i*i for i in lst]
+# print(newlst)
 
+#using list comprehension
 
+# newlst=[i+10 for i in lst]
+# print(newlst)
 
+#using map  function
 
+# newlst=list(map(lambda a:a+10,lst))
+# print(newlst)
 
+# lst=['apple','orange','mango']
+# newlst=['fruit' for i in lst]
+# print(newlst)
 
+# lst=['apple','orange','mango']
+# newlst=[i.upper() for i in lst]
+# print(newlst)
 
+# newlst=[i for i in range(0,100) if i%2==0]
+# print(len(newlst))
 
+# str=input("Enter the string")
+# newstr=[i for i in str if i in 'aeiouAEIOU']
+# print(len(newstr))
 
+# lst=[2,3,4,5]
+# new=['even' if i%2==0  else 'odd' for i in lst]
+# print(new)
+
+# lst=['rose','lotus','daisy','sunflower']
+# new=['flower' if i!='lotus' else 'lotus' for i in lst]
+# print(new)
+
+# lsta=['flower' if 'o' in i else 'fruit' for i in lst]
+# print(lsta)
+
+lst=[1,2,5,7,10]
+new=['<5' if i<5 else '=5' if i==5 else '>5' for i in lst]
+print(new)
 
 
 

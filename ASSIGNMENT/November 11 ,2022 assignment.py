@@ -53,7 +53,7 @@
 # l=input("Enter the string").split()
 # n=int(input("Enter the length"))
 # for word in l:
-#     if len(word)==n:
+#     if len(word)>n:
 #         print(word)
 
 #6)Check a string is symmetrical (str="abab",is symmetrical as both halves of the string are the same).
@@ -100,8 +100,8 @@
 
 #7)Remove character at even indices of a string
 
-s=input("Enter the string")
-print("String :",s[1::2])
+# s=input("Enter the string")
+# print("String :",s[1::2])
 
 #8)Count the number of words in a string
 
@@ -130,15 +130,13 @@ print("String :",s[1::2])
 # print("multiple is",m)
 
 #11)sort elements in a list without using built in function sort()
-#NOTFOUND,ERROR
-# lst=input("Enter the number").split()
-# print(lst)
-# newlst=[]
-# nw=0
-# for i in lst:
-#     if int(i)>=nw:
-#         nw=int(i)
-#         newlst.append(nw)
+#
+# lst=input("Enter the list").split()
+# newlst=list(map(int,lst))
+# for i in range(0,len(newlst)-1):
+#     for j in range(0,len(newlst)-1):
+#         if newlst[i]<newlst[j]:
+#             newlst[i],newlst[j]=newlst[j],newlst[i]
 # print(newlst)
 
 #12)Count numbers in a list which is greater than a given number
@@ -163,10 +161,10 @@ print("String :",s[1::2])
 # print("upper count is",c1)
 # print("lower count is",c2)
 
-#14)Let farm={1:'Eeman',2:'Catrine',3:'David'}be a dictionary.
-#To add the key value(8:'Jack').
-#To display the number of item in dictionary
-#To remove the key value pair(2:'Catrine')
+# 14)Let farm={1:'Eeman',2:'Catrine',3:'David'}be a dictionary.
+# To add the key value(8:'Jack').
+# To display the number of item in dictionary
+# To remove the key value pair(2:'Catrine')
 
 # farm={1:'Eeman',2:'Catrine',3:'David'}
 # farm[8]='Jack'
@@ -176,10 +174,10 @@ print("String :",s[1::2])
 # for i in farm:
 #     c=c+1
 # print("Number of item in a list",c)
-
+#
 # farm.pop(2)
 # print(farm)
-#15)Create a tuple from an existing tuple.new tuple contain only the elements divisible by 3
+#15)Create a tuple  an existing tuple.new tuple contain only the elements divisible by 3
 
 # tup=tuple(input("Enter the number").split())
 # print(tup)
@@ -188,6 +186,8 @@ print("String :",s[1::2])
 #     if int(i)%3==0:
 #         newlst.append(int(i))
 # print("New tuple contain elements only divisible by 3",tuple(newlst))
+
+
 
 
 

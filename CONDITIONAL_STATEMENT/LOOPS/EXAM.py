@@ -8,11 +8,53 @@
 
 #Find the average of elements in a list
 
-lst=input("Enter the number").split()
-print(lst)
-sum=0
-n=len(lst)
+# lst=input("Enter the number").split()
+# print(lst)
+# sum=0
+# n=len(lst)
+# for i in lst:
+#     sum=sum+int(i)
+# avg=sum/n
+# print("Average =",avg)
+
+
+#create a new list that have elements with exactly 5 character
+lst=['cherry','apple','mango','pinapple']
+newlst=[]
 for i in lst:
-    sum=sum+int(i)
-avg=sum/n
-print("Average =",avg)
+    if len(i)==5:
+        newlst.append(i)
+print(newlst)
+
+#or
+
+#list comprehension
+
+newlst=[i for i in lst if len(i)==5]
+print(newlst)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,7 +6,7 @@
 #4)list comprehension***
 
 
-#1)LAMBDA function/anonymous function***
+#1)LAMBDA function/anonymous function***(lambda function carrie one value at a time froma list.)
 
 #syntax
 
@@ -65,7 +65,7 @@
 # st=
 # print(u(st))
 
-#2)MAP function(map(fun,lst),we want to  make same changes in all element***
+#2)MAP function(map(fun,lst)),we want to  make same changes in all element***
 
 # def sum(a):
 #     return a+ 10
@@ -81,6 +81,7 @@
 
 # def mul(a):
 #     return a*a
+
 # lst=[1,2,3,4]
 # newlst=list(map(mul,lst))
 # print(newlst)
@@ -128,7 +129,7 @@
 # new=list(map(lambda a:a-5,lst1))#lambda function carrie one value at a time froma list.
 # print(new)
 
-#create a newlst by conerting each elements to upper case
+#create a newlst by converting each elements to upper case
 
 # lst=["one","two","three"]
 # new=list(map(lambda a:a.upper(),lst))
@@ -146,7 +147,7 @@
 # print(new)
 
 
-#3)filter function(),to filter element from given ***
+#3)filter function(),we want to filter elements from given ***
 
 #syntax
 
@@ -187,17 +188,20 @@
 # print("NO.elements in odd lst",len(lst3))
 
 
-#4)lst comprehension***
+#4)lst comprehension(expression first)***(more than one condition ,if  else if  else(model))
+
+# lst=[1,2,3,4,5,6,7,8,9]
 
 # lst=[i+10 for i in range(1,5)]
 # print(lst)
-#
+
 # lst1=[1,2,3,4]
-# lst2=[i+10 for i in lst1]
+# lst2=[a+10 for a in lst1]
 # print(lst2)
 
+#creat all element in cap.
 
-# fruit=['apple','orange','mango']
+# fruit=['apple','oran ge','mango']
 # frt=[i.upper() for i in fruit]
 # print(frt)
 
@@ -210,7 +214,22 @@
 # nw=[i for i in lst if i>5]
 # print(nw)
 
+#convert all into fruit
+
 # fruit=['apple','orange','mango']
+# new=['fruit' for i in fruit]
+# print(new)
+#find the number of even number less than 100.
+
+# new=[i for i in range(0,100) if i%2==0]
+# print(len(new))
+
+#find number of vovel in a string
+
+# str=input('Enter the string')
+# new=[i for i in str if i in 'aeiouAEIOU']
+# print(len(new))
+
 #create a list have the elements with character 'o'
 
 # nw=[i for i in fruit if 'o' in i]
@@ -223,7 +242,60 @@
 
 #find number of multiple of 7 between 1 and 1000
 
-nw=[i for i in range(1,1000) if i%7==0]
-print(len(nw))
+# nw=[i for i in range(1,1000) if i%7==0]
+# print(len(nw))
+
+#list must become all are fruit
+
+# lst=['apple','orange','mango']
+# newlst=['fruit' for i in lst]
+# print(newlst)
+
+#find the number of even numbers less than 100
+
+# newlst=[i for i in range(1,100) if i%2==0]
+# print(len(newlst))
+
+#find number of vowels in a string
+
+# lst=input("Enter the string")
+# newlst=[i for i in lst if i in 'aeiouAEIOU']
+# print(len(newlst))
+
+#we have to change even position to 'even' and odd position to 'odd'
+
+# lst=[1,2,3,4,5,6,7,8]
+# new=['even' if i%2==0 else 'odd' for i in lst]
+# print(new)
+
+#replace all the elements as 'flower' except lotus
+
+# lst=['rose','lotus','daisy','sunflower']
+# new=['flower' if i!='lotus' else 'lotus' for i in lst]
+# print(new)
+
+#replace with 'flower' if element have'o'else with 'fruit'
+
+# lst=['rose','lotus','apple','pinapple']
+# newlst=['folwer' if 'o' in i else 'fruit' for i in lst]
+# print(newlst)
+
+#replace elements in the given form
+
+lst=[1,2,5,7,10]
+new=['<5' if i<5 else '==5'if i==5 else '>5' for i in lst]
+print(new)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
