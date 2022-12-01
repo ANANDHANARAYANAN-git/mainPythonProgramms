@@ -634,9 +634,29 @@ lst=[1,2,3,4,5,6]
 # lsta=['flower' if 'o' in i else 'fruit' for i in lst]
 # print(lsta)
 
-lst=[1,2,5,7,10]
-new=['<5' if i<5 else '=5' if i==5 else '>5' for i in lst]
-print(new)
+# lst=[1,2,5,7,10]
+# new=['<5' if i<5 else '=5' if i==5 else '>5' for i in lst]
+# print(new)
+
+# lst=input("Enter the list").split()
+# lst1=list(map(int,lst))
+# for i in range(0,len(lst1)):
+#     for j in range(i+1,len(lst1)):
+#         if lst1[i]>lst1[j]:
+#             lst1[i],lst1[j]=lst1[j],lst1[i]
+# print(lst1)
+
+
+#factorial
+def fact(n):
+    f=1
+    for i in range(1,n+1):
+        f=f*i
+    print(f)
+
+
+import factorial
+factorial.fact(5)
 
 
 

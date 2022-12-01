@@ -7,8 +7,8 @@ print("String :",s[1::2])
 
 lst=input("Enter the list").split()
 newlst=list(map(int,lst))
-for i in range(0,len(newlst)-1):
-    for j in range(0,len(newlst)-1):
-        if newlst[i]<newlst[j]:
+for i in range(0,len(newlst)):
+    for j in range(i+1,len(newlst)):
+        if newlst[i]>newlst[j]:
             newlst[i],newlst[j]=newlst[j],newlst[i]
 print(newlst)
